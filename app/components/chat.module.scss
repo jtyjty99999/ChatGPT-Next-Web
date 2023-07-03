@@ -207,6 +207,7 @@
   flex-direction: column;
   position: relative;
   height: 100%;
+  background-color: var(--chat);
 }
 
 .chat-body {
@@ -355,13 +356,17 @@
   z-index: 1;
 }
 
-.chat-message-user > .chat-message-container > .chat-message-item {
-  background-color: var(--second);
+.chat-message-user, .chat-message{
 
-  &:hover {
-    min-width: 0;
+  > .chat-message-container > .chat-message-item {
+    background-color: var(--msg);
+  
+    &:hover {
+      min-width: 0;
+    }
   }
-}
+
+} 
 
 .chat-input-panel {
   position: relative;
